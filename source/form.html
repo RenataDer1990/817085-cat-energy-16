@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="page-header__title">Подбор программы</h1>
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="http://placehold.it" width="33" height="38" alt="Cat Energy">
+          <img class="page-header__logo-image" src="picture.svg" alt="Cat Energy">
+      </a>
+
+      <nav class="main-nav">
+          <button class="main-nav__toggle" type="button"></button>
+          <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+            <a  href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Подбор программы</a>
+          </li>
+          </ul>
+              </div>
+      </nav>
+    </header>
+    <main>
+      <section class="questionnaire">
+                    <h1 class="questionnaire__title">Подбор программы</h1>
+        <p class="questionnaire__description">Заполните анкету и мы подберем
+программу питания для вашего кота</p>
+
+
+    <form class="info" method="post"
+          action="https://echo.htmlacademy.ru">
+      <div class="info-about-cat">
+      <p>
+        <label for="cat-name">Имя:<sup>*</sup></label>
+        <input id="cat-name" type="text"
+               name="catsname" placeholder="Барсик">
+      </p>
+      <p>
+        <label for="cat-weight">Вес (кг):<sup>*</sup></label>
+        <input id="cat-weight" type="text"
+               name="catsweight" placeholder="7">
+      </p>
+      <p>
+        <label for="cat-age">Возраст (лет):</label>
+        <input id="cat-age" type="text"
+               name="catsage" placeholder="7">
+      </p>
+</div>
+<fieldset>
+        <legend class="visually-hidden">Выбор программы</legend>
+        <ul class="programms__list ourprogramms-list">
+          <li class="ourprogramms-list__item">
+            <input type="radio" name="programms_name" value="slim" id="filter-slim" checked>
+            <label for="filter-slim">
+              Похудение
+            </label>
+          </li>
+          <li class="ourprogramms-list__item">
+            <input type="radio" name="programms_name" value="fat" id="filter-fat">
+            <label for="filter-fat">
+              Набор массы
+            </label>
+          </li>
+          <li class="ourprogramms-list__item">
+            <input type="radio" name="programms_namе" value="undefined" id="filter-undefined">
+            <label for="filter-undefined">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="info-about-owner">
+        <legend class="info-about-owner__title">Контактные данные (владельца кота)</legend>
+      <p>
+        <label for="owner-post">E-mail:<sup>*</sup></label>
+        <input id="owner-post" type="email"
+               name="email" placeholder="kuklachev@gmail.com">
+      </p>
+      <p>
+        <label for="owner-phone">Телефон:*<sup>*</sup></label>
+        <input id="owner-phone" type="tel"
+               name="phone" placeholder="8 (960) 900-60-90">
+      </p>
+
+</div>
+<div class = "comments">
+
+
+
+
+                    <label for="comments__content">Комментарий</label>
+                    <textarea id="comments__content" name="mycat" placeholder="Расскажите обо всех повадках кота">
+                    </textarea>
+                </div>
+<div class="additional">
+                        <fieldset class="additional__products">
+                            <legend>Дополнительно:</legend>
+                            <div class="additional__products-checkbox">
+                                <div class="filter-option">
+                                    <input type="checkbox" id="sweetener" name="sweetener" class="visually-hidden" checked>
+                                    <label for="sweetener">Сахарозаменитель</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="water" name="water" class="visually-hidden">
+                                    <label for="water"> Питьевая вода</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="milk" name="milk" class="visually-hidden">
+                                    <label for="milk"> Молоко</label>
+                                </div>
+                                <div class="filter-option">
+                                    <input type="checkbox" id="vitamin" name="vitamin" class="visually-hidden">
+                                    <label for="vitamin"> Витамины</label>
+                                </div>
+                                <button class = "additional__button" type = "submit">Отправить заявку</button>
+                            </div>
+                        </fieldset>
+                    </div>
+            </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+        <a>
+       <img class="page-footer__logo-image" src="picture.svg" alt="Cat Energy">
+      </a>
+    <div class="page-footer__social social">
+                    <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Фейсбук</a>
+          </li>
+        </ul>
+      </div>
+        <a>HTML Academy</a>
+      <a>
+       <img class="page-footer__logo-image" src="#" alt="Cat Energy">
+      </a>
+        </footer>
+  </body>
+</html>
