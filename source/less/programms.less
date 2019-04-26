@@ -1,0 +1,47 @@
+.programms{
+margin-left:20px;
+  background-color:lightgray;
+}
+.programms__title{
+  position:relative;
+  font-size:24px;
+}
+
+.programms__title::before{
+  content: "";
+  display: block;
+    width: 52px;
+    height: 52px;
+  background-color: rgba(104,183,56, 1);
+  border:1px solid rgba(104,183,56, 1);
+  border-radius:50%;
+float:left;
+  margin-right: 20px;
+
+}
+.programms__title::after{
+  content: "";
+    position: absolute;
+  top:0;
+  left:0;
+    width: 52px;
+    height: 52px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat:no-repeat;
+  background-position: center center;
+
+}
+.programms__title{
+  position:relative;
+
+}
+.programms__title--pro::after{
+background-image: url("../img/icon-cat-pro.svg");
+
+}
+.programms__description{
+  font-size:14px;
+}
+.programms a{
+  font-size:16px;
+}
