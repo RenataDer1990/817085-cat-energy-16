@@ -1,0 +1,27 @@
+.main-nav{
+  /* Временно для сетки */
+    min-height: 265px;
+}
+.main-nav__toggle{
+  background-image:url("../img/icon-mobile-menu.svg");
+background-color:white;
+  width:24px;
+  height:18px;
+    border:0px;
+
+}
+.main-nav__toggle:active .main-nav__wrapper{
+  display:block;
+}
+.main-nav__wrapper{
+display:none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    /* Временно для сетки */
+    min-height: 70px;
+    display:flex;
+
+  }
+}
